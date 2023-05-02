@@ -203,6 +203,9 @@ h3{
     align-items: center;
     font-family: 'Kaushan Script';
 }
+.coordonnées p{
+    font-size: 22px;
+}
 .footer {
     position: fixed;
     bottom:0;

@@ -93,9 +93,8 @@ function HomePage(){
                         <li>Réservation</li>
                     </div>
                     <div className='coordonnées'>
-                        <p>lesclesdutregor@mail.com</p>
-                        <p>01 01 01 01 01</p>
-                        <p> 06 06 06 06 06</p>
+                        <p>lesclesdutregor@gmail.com</p>
+                        <p>07 84 64 26 95</p>
                     </div>
                          
                 </div>
