@@ -1,6 +1,7 @@
 import homepage from '../assets/homepage.jpg'
 import nosservices from '../assets/nosservices.jpg'
 import logo from '../assets/logo.png'
+import portrait from '../assets/portrait.jpg'
 import data from '../datas/images.json'
 import { FaFacebook, FaInstagram} from 'react-icons/fa';
 
@@ -53,6 +54,7 @@ function HomePage(){
                                     <li> Joignabilité durant le séjour pour gérer les imprévus</li>
                                 </ol>
                             </li>
+                            <li>Blanchisserie, préparation du logement pour les futurs vacanciers</li>
                         </ul>
                     </div>
                     <div className="formule">
@@ -81,6 +83,26 @@ function HomePage(){
                     </div>
                   ))
             }
+        </div>
+
+        <div className='portrait_container' >
+            <div className='portrait'>
+                <div className='p_content'>
+                    <p>«  Les vingt dernières années passées dans le domaine du tourisme, en passant par la direction
+d’hôtel, la gestion locative de villas dans la Caraïbe, l’organisation de voyages haut de gamme et le
+service premium à bord de l’Eurostar, m’ont naturellement amené à développer mon activité de
+conciergerie. Un métier qui me permet de regrouper et de mettre à profit les compétences acquises
+tout au long de mon parcours professionnel. La satisfaction client, le souci du détail et l’approche
+technique (normes d’hygiène, sécurité…) et commerciale (diffusion du bien, optimisation des
+profits…) sont au cœur de mes préoccupations afin d’assurer un service de conciergerie
+d’excellence. »</p></div>
+            <div>
+            <img src={portrait} alt="portrait erwann le roy" className='portrait_img' />
+            <span className='etiquette'>ERWANN LE ROY</span></div>
+            
+            
+            </div>
+            
         </div>
 
         <div className='contact' id="contact">
