@@ -4,6 +4,15 @@ import logo from '../assets/logo.png'
 import portrait from '../assets/portrait.jpg'
 import data from '../datas/images.json'
 import { FaFacebook, FaInstagram} from 'react-icons/fa';
+import annonce from '../assets/annonce.png'
+import prix from '../assets/prix.png'
+import reservation from '../assets/reservation.png'
+import accueil from '../assets/accueil.png'
+import blanchisserie from '../assets/blanchisserie.png'
+import menage from '../assets/menage.png'
+import gardiennage from '../assets/gardiennage.png'
+import outils from '../assets/outils.png'
+import vente from '../assets/vente.png'
 
 
 function HomePage(){
@@ -26,35 +35,65 @@ function HomePage(){
                             <p> Parce que la votre temps est précieux, nous gérons pour vous de A à Z </p>
                         </div>
                         
-                        <ul>
-                            <li>
-                                Création et diffusion de votre annonce :
-                                <ol>
-                                    <li> Rédaction de texte et photos soignées</li>
-                                    <li>Mise en ligne de l'annonce sur des plateformes de réservations</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Optimisation du remplissage et des prix :
-                                <ol>
-                                    <li> Tarifs adaptés en fonction de l'offre et la demande</li>
-                                    <li> Suivi des réservations et mise à jour des plannings</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Gestion des demandes de réservations :
-                                <ol>
-                                    <li> Réponses rapides, 7j/7 en plusieurs langues</li>
-                                </ol>
-                            </li>
-                            <li>
-                                Accueil et assistance des vacanciers :
-                                <ol>
+                        <ul className='prestations_formule'>
+
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={annonce} alt="" className='icones_prestations'  />
+                                <div style={{display:"flex", flexDirection:'column'}}>
+                                    <h4>Création et diffusion de votre annonce :</h4>
+                                    <ul className='prestations_ul_content'>
+                                        <li> Rédaction de texte et photos soignées</li>
+                                        <li>Mise en ligne de l'annonce sur des plateformes de réservations</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={prix} alt="" className='icones_prestations'  />
+                                <div style={{display:"flex", flexDirection:'column'}}>
+                                    <h4>Optimisation du remplissage et des prix :</h4>
+                                    <ul className='prestations_ul_content'>
+                                        <li> Tarifs adaptés en fonction de l'offre et la demande</li>
+                                        <li> Suivi des réservations et mise à jour des plannings</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={reservation} alt="" className='icones_prestations'  />
+                                <div style={{display:"flex", flexDirection:'column'}}>
+                                    <h4>Gestion des demandes de réservations :</h4>
+                                    <ul className='prestations_ul_content'>
+                                        <li> Réponses rapides, 7j/7 </li>
+                                        <li> En plusieurs langues</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={accueil} alt="" className='icones_prestations'  />
+                                <div style={{display:"flex", flexDirection:'column'}}>
+                                    <h4> Accueil et assistance des vacanciers :</h4>
+                                    <ul className='prestations_ul_content'>
                                     <li> Arrivées et départs, remise des clés et états des lieux</li>
                                     <li> Joignabilité durant le séjour pour gérer les imprévus</li>
-                                </ol>
-                            </li>
-                            <li>Blanchisserie, préparation du logement pour les futurs vacanciers</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={blanchisserie} alt="" className='icones_prestations'  />
+                                <div style={{display:"flex", flexDirection:'column'}}>
+                                    <h4> Organisatiton</h4>
+                                    <ul className='prestations_ul_content'>
+                                    <li>Blanchisserie,linge </li>
+                                    <li>Préparation du logement pour les futurs vacanciers</li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                              
                         </ul>
                     </div>
                     <div className="formule">
@@ -62,12 +101,35 @@ function HomePage(){
                     <div className='blockquote'>
                         <p> Parce que l’on s’adapte aussi à vos besoins, vous êtes libres de choisir les services qu’il vous faut </p>
                         </div>
-                        <ul>
-                            <li>  Prestation de ménage de fin de séjour ou préparation du logement pour la saison</li>
-                            <li> Gardiennage</li>
-                            <li> Entretien des espaces extérieurs et maintenance</li>
-                            <li> Commercialisation du bien</li>
-                        </ul>
+                        
+                        <ul className='prestations_formule'>
+
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={menage} alt="" className='icones_prestations'  />
+                                <div className='content_prestations'>
+                                    <h4>Prestation de ménage de fin de séjour ou préparation du logement pour la saison</h4>
+                                </div>
+                            </div>
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={gardiennage} alt="" className='icones_prestations'  />
+                                <div  className='content_prestations'>
+                                    <h4>Gardiennage</h4>
+                                </div>
+                            </div>
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={outils} alt="" className='icones_prestations'  />
+                                <div className='content_prestations'>
+                                    <h4>Entretien des espaces extérieurs et maintenance</h4>
+                                </div>
+                            </div>
+                            <div style={{display:"flex", flexDirection:'row'}}>
+                                <img src={vente} alt="" className='icones_prestations'  />
+                                <div className='content_prestations'>
+                                    <h4>Commercialisation du bien</h4>
+                                </div>
+                            </div>
+
+                            </ul>
                     </div>
                  </div>
             </div>  
